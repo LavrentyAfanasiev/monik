@@ -136,7 +136,6 @@ namespace Monik.Service
                 // interval with epsilon
                 var intervalStart = actualIntervalStart.AddMilliseconds(-IntervalEpsilon);
                 var intervalEnd = actualIntervalEnd.AddMilliseconds(IntervalEpsilon);
-
                 if (metTime < intervalStart || metTime > intervalEnd)
                 {
                     // skip event
